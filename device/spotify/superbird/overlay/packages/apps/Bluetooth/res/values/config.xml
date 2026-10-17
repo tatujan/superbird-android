@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2026 The PlayThing Authors
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<!-- Bluetooth profiles: A2DP source and AVRCP target (a car stereo or a speaker), HFP
+     (some cars connect only to devices with HFP), and PAN (internet from a phone's
+     hotspot, docs/bluetooth-audio.md). The other profiles use RAM. -->
+<resources>
+    <bool name="profile_supported_hdp">false</bool>
+    <bool name="profile_supported_hid_host">false</bool>
+    <bool name="profile_supported_hid_device">false</bool>
+    <bool name="profile_supported_opp">false</bool>
+    <bool name="profile_supported_pan">true</bool>
+    <bool name="profile_supported_pbap">false</bool>
+    <bool name="profile_supported_map">false</bool>
+</resources>
