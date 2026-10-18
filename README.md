@@ -1,6 +1,6 @@
 # superbird-android
 
-**Status: beta** (version 0.1.0-beta.2). It is tested on one Car Thing only, and it has known
+**Status: beta** (version 0.1.0-beta.3). It is tested on one Car Thing only, and it has known
 issues (`docs/known-issues.md`).
 
 Android 9 (Go, 32-bit) for the Spotify Car Thing, as a test bed for Android apps. It is the
@@ -58,8 +58,8 @@ For a USB mode, connect the Car Thing directly to the computer, not through the 
 
 ## First install
 
-1. Download `superbird-android-0.1.0-beta.2.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
-   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta.2`. (Or make a release folder
+1. Download `superbird-android-0.1.0-beta.3.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
+   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta.3`. (Or make a release folder
    yourself, see "Build".)
 2. Disconnect the Car Thing. Hold presets 1 and 4, connect it directly to the computer, and
    release after about 3 seconds.
@@ -102,8 +102,10 @@ superbird-android: put the Car Thing in USB burn mode (preset 4, directly to the
 | PlayThing or superbird-android | Update, as above. The two share `/data`; Android deletes the data of the apps that the new image does not have. |
 | A companion app (for example MacThing, Carthios) | What counts is the firmware below it: see the rows above. |
 
-`python3 flash.py check` shows the state of the Car Thing and writes nothing. The README of the
-release folder, `docs/release.md`, and `docs/boot.md` have more details.
+`python3 flash.py check` shows the state of the Car Thing and writes nothing. To report a problem,
+run `python3 flash.py diag` (preset 4): it writes nothing and makes a folder `diag/<time>/`. Post
+its `summary.txt`; send its `data/` folder (Android logs with device data) only privately. The
+README of the release folder, `docs/release.md`, and `docs/boot.md` have more details.
 
 ## What I changed to make this possible
 
