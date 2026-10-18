@@ -1,6 +1,6 @@
 # superbird-android
 
-**Status: beta** (version 0.1.0-beta.4). It is tested on one Car Thing only, and it has known
+**Status: beta** (version 0.1.0-beta.5). It is tested on one Car Thing only, and it has known
 issues (`docs/known-issues.md`).
 
 Android 9 (Go, 32-bit) for the Spotify Car Thing, as a test bed for Android apps. It is the
@@ -58,8 +58,8 @@ For a USB mode, connect the Car Thing directly to the computer, not through the 
 
 ## First install
 
-1. Download `superbird-android-0.1.0-beta.4.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
-   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta.4`. (Or make a release folder
+1. Download `superbird-android-0.1.0-beta.5.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
+   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta.5`. (Or make a release folder
    yourself, see "Build".)
 2. Disconnect the Car Thing. Hold presets 1 and 4, connect it directly to the computer, and
    release after about 3 seconds.
