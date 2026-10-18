@@ -1,6 +1,6 @@
 # superbird-android
 
-**Status: beta** (version 0.1.0-beta). It is tested on one Car Thing only, and it has known
+**Status: beta** (version 0.1.0-beta.2). It is tested on one Car Thing only, and it has known
 issues (`docs/known-issues.md`).
 
 Android 9 (Go, 32-bit) for the Spotify Car Thing, as a test bed for Android apps. It is the
@@ -58,8 +58,8 @@ For a USB mode, connect the Car Thing directly to the computer, not through the 
 
 ## First install
 
-1. Download `superbird-android-0.1.0-beta.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
-   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta`. (Or make a release folder
+1. Download `superbird-android-0.1.0-beta.2.zip` from the [Releases page](https://github.com/tatujan/superbird-android/releases) of this repository,
+   unzip it, and open a terminal in the folder `superbird-android-0.1.0-beta.2`. (Or make a release folder
    yourself, see "Build".)
 2. Disconnect the Car Thing. Hold presets 1 and 4, connect it directly to the computer, and
    release after about 3 seconds.
@@ -81,7 +81,9 @@ For a USB mode, connect the Car Thing directly to the computer, not through the 
    after about 3 seconds.
 2. Download and unzip the zip of the new release from the [Releases page](https://github.com/tatujan/superbird-android/releases).
    In its folder, run `python3 flash.py install`, and push Enter at the question. The tool
-   writes only the blocks that changed (about 3 minutes). Your data stays.
+   writes only the blocks that changed (about 3 minutes). Your data stays. On a Car Thing with
+   the newer Spotify U-Boot, the tool first asks you to connect it once more with preset 4, to
+   check its partition table.
 3. Disconnect the Car Thing, and connect it to the hub.
 
 ## Back to the stock software
