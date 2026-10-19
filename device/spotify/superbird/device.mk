@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     Settings \
     VpnDialogs
 
-# Graphics: Mali r16p0 blob, Mali gralloc, our HWC (docs/graphics.md).
+# Graphics: Mali r16p0 blob, Mali gralloc, the HWC of this device folder (docs/graphics.md).
 PRODUCT_PACKAGES += \
     libGLES_mali \
     gralloc.aosp_superbird \

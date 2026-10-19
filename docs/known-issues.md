@@ -1,5 +1,14 @@
 # Known issues
 
+## Music through a hub's AUX jack
+
+With a USB-C hub that has Power Delivery, data ports, and a 3.5 mm AUX jack, no sound came out of
+the jack. The image has the USB audio parts (the HAL `audio.usb.default`, the USB audio policy,
+`CONFIG_SND_USB_AUDIO`), but USB audio output was never tested on the Car Thing. Possible causes:
+the hub's jack is analog over USB-C (no USB sound card in the hub), Android routes the sound to a
+connected Bluetooth device first, or the USB sound card does not reach the audio policy. The
+cause is not known yet.
+
 ## Limits
 
 - `screencap` gives a distorted image (the landscape frame in a portrait buffer).
@@ -14,8 +23,8 @@
   partition table is still the superbird-tool one"). On a unit with the stock software v8
   (board revision 4), PlayThing up to `0.1.0-beta.4` started Android, but the screen showed
   noise: U-Boot applied the stock DRM overlay, so `/dev/graphics/fb0` was missing.
-  `0.1.0-beta.5` skips that overlay (`docs/boot.md`, "Device-tree overlays"); not tested yet on
-  such a unit.
+  `0.1.0-beta.5` skips that overlay (`docs/boot.md`, "Device-tree overlays"); with it, PlayThing
+  works on that unit (a user's report).
 
 ## Logs
 
