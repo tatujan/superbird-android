@@ -20,6 +20,7 @@ DONORS="hardware/amlogic/gralloc"
 
 # Placeholders; the sources and SHA-256 of the real files are in scripts/blobs.py.
 MALI_DST=$AOSP/vendor/plaything/mali/libGLES_mali.so
+DROIDIFY_DST=$AOSP/vendor/plaything/droidify/Droidify.apk
 
 cd "$AOSP"
 
@@ -36,8 +37,9 @@ done
 repo sync -c --no-tags --no-clone-bundle -j4 $DONORS
 
 echo "== placeholders"
-mkdir -p "$(dirname "$MALI_DST")"
+mkdir -p "$(dirname "$MALI_DST")" "$(dirname "$DROIDIFY_DST")"
 python3 "$REPO/scripts/blobs.py" placeholder libGLES_mali.so "$MALI_DST"
+python3 "$REPO/scripts/blobs.py" placeholder Droidify.apk "$DROIDIFY_DST"
 
 echo "== device configuration"
 mkdir -p device/spotify

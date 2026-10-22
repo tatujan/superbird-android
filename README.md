@@ -136,11 +136,13 @@ in `docs/`):
   for automatic brightness (`docs/display-brightness.md`).
 - **Knob and buttons.** A framework patch makes the knob move the focus in apps; the buttons
   send media keys (`docs/input.md`).
-- **Apps.** A minimal keyboard (CptKeyboard) and Settings patches for a screen without
-  phone features (`docs/keyboard.md`).
+- **Apps.** Droid-ify as the app store, with installs and removals without a prompt; an
+  App manager (storage, memory, clean-up); ThingPod, an iPod-style music player for the knob; a
+  minimal keyboard (CptKeyboard); Settings patches for a screen without phone features
+  (`docs/apps.md`, `docs/thingpod.md`, `docs/keyboard.md`).
 - **Security.** SELinux enforcing, with my own policy for each script and HAL
   (`docs/selinux.md`).
-- **A publishable image.** No Arm, Amlogic, or Broadcom files in the image: placeholders
+- **A publishable image.** No Arm, Amlogic, Broadcom, or Droid-ify files in the image: placeholders
   that `flash.py` fills on your computer, and the Bluetooth firmware from your own Car Thing
   (`docs/release.md`).
 - **A build on a Mac.** The AOSP Pie build runs in a Linux container under Rosetta, with an ART

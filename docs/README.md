@@ -17,6 +17,8 @@ image that it comes from); text about PlayThing, DiPlay, or CptHome applies to P
 | `persistent-data.md` | `/data` on the stock data partition |
 | `selinux.md` | The SELinux policy |
 | `keyboard.md` | The keyboard (CptKeyboard) |
+| `apps.md` | The app store (Droid-ify) and the App manager |
+| `thingpod.md` | ThingPod, the iPod classic style music player |
 | `build.md` | How to build the kernel, the image, and a release |
 | `release.md` | The release folder and the flash tool |
 | `release-licenses.md` | Licenses and source code of the parts of a release |
